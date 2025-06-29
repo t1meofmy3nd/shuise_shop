@@ -1,37 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SneakZone - Home</title>
+    <title>SneakZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="hero">
-    <h1>SneakZone</h1>
-    <p>Your ultimate sneaker destination</p>
-    <a class="btn" href="catalog.html">Go to Catalog</a>
+<header class="header">
+    <div class="header-top">
+        <div class="logo">SneakZone</div>
+        <form class="search"><input type="text" placeholder="Поиск"></form>
+        <div class="actions">
+            <a href="cart.html" class="cart" aria-label="Cart">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 6.6 17h12.8M7 13h10m0 0l-1 5H8l-1-5m5 0v5"/>
+                </svg>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="login.html" class="btn-link">Войти</a>
+        </div>
+    </div>
+    <nav class="nav">
+        <a href="#" class="nav-item">Мужские</a>
+        <a href="#" class="nav-item">Женские</a>
+        <a href="#" class="nav-item">Спортивные</a>
+        <a href="#" class="nav-item">Новые</a>
+    </nav>
 </header>
-<section class="popular">
-    <h2>Popular Models</h2>
-    <div class="grid" id="popular-container"></div>
-</section>
-<section class="new">
-    <h2>New Arrivals</h2>
-    <div class="grid" id="new-container"></div>
-</section>
-<section class="reviews">
-    <h2>Reviews</h2>
-    <div class="carousel" id="reviews-carousel"></div>
-</section>
-<section class="about">
-    <h2>About Us</h2>
-    <p>We love sneakers and bring you the best on the market.</p>
-</section>
-<footer>
-    <p>Contacts: info@sneakzone.com</p>
+<main>
+    <section class="hero">
+        <h1>Найди свои идеальные кроссовки</h1>
+        <a href="catalog.html" class="btn">Перейти в каталог</a>
+    </section>
+    <section class="section popular">
+        <h2>Популярные товары</h2>
+        <div class="scroll" id="popular-container"></div>
+    </section>
+    <section class="section reviews">
+        <h2>Отзывы покупателей</h2>
+        <div class="carousel" id="reviews-carousel"></div>
+    </section>
+    <section class="section benefits">
+        <h2>Почему выбирают нас</h2>
+        <div class="benefits-list">
+            <div class="benefit">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <p>Оригинальные бренды</p>
+            </div>
+            <div class="benefit">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18l-1 8H4L3 3z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 13v6H8v-6" />
+                </svg>
+                <p>Быстрая доставка</p>
+            </div>
+            <div class="benefit">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M8.465 5.05L7.05 6.465m9.9 9.9l-1.414 1.414M12 8v4l3 3" />
+                </svg>
+                <p>Поддержка 24/7</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <p>&copy; 2023 SneakZone</p>
 </footer>
 <script src="js/reviews.js"></script>
 <script src="js/main.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>

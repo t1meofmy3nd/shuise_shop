@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SneakZone - Cart</title>
+    <title>SneakZone - Корзина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Your Cart</h1>
+<header class="header">
+    <div class="header-top">
+        <div class="logo">SneakZone</div>
+        <form class="search"><input type="text" placeholder="Поиск"></form>
+        <div class="actions">
+            <a href="cart.html" class="cart" aria-label="Cart">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 0 0 6.6 17h12.8M7 13h10m0 0l-1 5H8l-1-5m5 0v5"/>
+                </svg>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="login.html" class="btn-link">Войти</a>
+        </div>
+    </div>
 </header>
-<div id="cart-items"></div>
-<div id="total-price"></div>
-<button id="checkout-btn">Checkout</button>
-<script src="js/cart.js"></script>
+<main class="section">
+    <h1>Корзина</h1>
+    <div id="cart-items"></div>
+    <div id="total-price"></div>
+    <button class="btn" id="checkout-btn">Оформить заказ</button>
+</main>
+<footer class="footer">
+    <p>&copy; 2023 SneakZone</p>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SneakZone - Register</title>
+    <title>SneakZone - Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Register</h1>
-<form id="register-form" action="php/register.php" method="post">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <button type="submit">Register</button>
-</form>
-<p>Already have an account? <a href="login.html">Login</a></p>
+<div class="auth-card">
+    <h1>Регистрация</h1>
+    <form id="register-form" action="php/register.php" method="post">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button class="btn" type="submit">Создать аккаунт</button>
+    </form>
+    <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+</div>
 </body>
 </html>
