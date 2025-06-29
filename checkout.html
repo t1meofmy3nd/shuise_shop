@@ -8,17 +8,19 @@
 </head>
 <body>
 <h1>Checkout</h1>
-<form id="checkout-form">
-    <input type="text" placeholder="Name" required>
-    <input type="tel" placeholder="Phone" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Address" required>
-    <select>
+<form id="checkout-form" action="php/order.php" method="post">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="tel" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <select name="payment">
         <option value="cod">Cash on Delivery</option>
         <option value="card">Card</option>
     </select>
+    <input type="hidden" name="cart" id="cart-data">
     <button type="submit">Confirm Order</button>
 </form>
 <script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
 </body>
 </html>

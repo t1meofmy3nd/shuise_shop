@@ -1,7 +1,7 @@
 const popular = [
-  {id:1,name:'Nike Air Max',price:150,img:'https://images.unsplash.com/photo-1519744346367-3ce16e5b2ce9?auto=format&fit=crop&w=800&q=80'},
-  {id:2,name:'Adidas Superstar',price:120,img:'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=800&q=80'},
-  {id:3,name:'Puma RS-X',price:130,img:'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80'}
+  {id:1,name:'Nike Air Max',price:150,img:'img/sneakers/sneaker1.png'},
+  {id:2,name:'Adidas Superstar',price:120,img:'img/sneakers/sneaker2.png'},
+  {id:3,name:'Puma RS-X',price:130,img:'img/sneakers/sneaker3.png'}
 ];
 
 function renderCards(containerId, items){

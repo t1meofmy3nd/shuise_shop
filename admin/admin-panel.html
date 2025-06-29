@@ -8,6 +8,18 @@
 </head>
 <body>
 <h1>Admin Panel</h1>
-<p>Placeholder for admin actions.</p>
+<form id="add-form" action="../php/add_product.php" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="brand" placeholder="Brand" required>
+    <input type="number" name="size" placeholder="Size" required>
+    <input type="number" name="price" placeholder="Price" step="0.01" required>
+    <input type="file" name="img" accept="image/*" required>
+    <button type="submit">Add Product</button>
+</form>
+<div id="delete-section">
+    <input type="number" id="delete-id" placeholder="Product ID">
+    <button id="delete-btn">Delete</button>
+</div>
+<script src="../js/admin.js"></script>
 </body>
 </html>
