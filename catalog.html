@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakZone - Catalog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Catalog</h1>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+</header>
+<aside class="filters">
+    <input type="text" id="search" placeholder="Search">
+    <select id="brand-filter">
+        <option value="">All brands</option>
+        <option value="Nike">Nike</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Puma">Puma</option>
+    </select>
+    <input type="range" id="price-filter" min="0" max="300" step="10">
+</aside>
+<div class="grid" id="catalog-container"></div>
+<script src="js/filters.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
